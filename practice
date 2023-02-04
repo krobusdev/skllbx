@@ -1,1 +1,31 @@
+using System;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        string fullName = "Larin Viacheslav Alekseevich";
+        byte age = 20;
+        string email = "it5myemail@ya.ru";
+        float programmingPoints = 66.6f;
+        float mathPoints = 82.2f;
+        float physicsPoints = 32.1f;
+    
+        float sumOfPoints = programmingPoints + mathPoints + physicsPoints;
+        float averagePoints = sumOfPoints / 3;
+
+        Console.WriteLine("Ф. И. О.: {0}\nВозраст: {1}\nПочта: {2}\nБаллы по программированию: {3}\nБаллы по математике: {4}\nБаллы по физике: {5}",
+            fullName,
+            age,
+            email,
+            programmingPoints,
+            mathPoints,
+            physicsPoints);
+
+        Console.WriteLine("Сумма баллов: {0}\nСредний балл: {1}",
+            sumOfPoints,
+            averagePoints);
+
+        Console.ReadLine();
+    }
+}
